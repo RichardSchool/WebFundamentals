@@ -1,7 +1,9 @@
-#responses {
+body {
 
   font-family: 'Poppins', sans-serif, 'Verdana';
-    
+  font-size:18;
+  font-weight:lighter;
+  color: 	#696969;
 }
 a {
   font-style:"italic"
@@ -14,11 +16,4 @@ a:visited {
 }
 a:hover {
    color: #ff05a9;
-}
-
-p {
-
-  font-size:18;
-  font-weight:lighter
-    
 }

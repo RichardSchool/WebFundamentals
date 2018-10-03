@@ -1,5 +1,17 @@
 #responses {
 
   font-family: "Verdana"
-  
+    
+}
+a {
+  font-style:"italic"
+}
+a:link {
+   color: #f1c40f;
+}
+a:visited {
+   color: #33db24;
+}
+a:hover {
+   color: #ff05a9;
 }

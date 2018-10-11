@@ -17,5 +17,13 @@ a:visited {
 a:hover {
    color: #ff05a9;
 }
-ul { display:table; margin:0 auto;}
-ol { display:table; margin:0 auto;}
+ul { 
+  font-weight:500;
+  display:table; 
+  margin:0 auto;
+}
+ol {
+  font-weight:500;
+  display:table; 
+  margin:0 auto;
+}

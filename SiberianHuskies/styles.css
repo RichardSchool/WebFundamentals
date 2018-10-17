@@ -1,5 +1,14 @@
 body {
   font-family: "Chakra-Petch", sans-serif;
   text-align: center;
-  
+}
+ul { 
+  font-weight:500;
+  display:table; 
+  margin:0 auto;
+}
+ol {
+  font-weight:500;
+  display:table; 
+  margin:0 auto;
 }

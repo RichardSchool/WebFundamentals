@@ -9,12 +9,12 @@ ul {
   list-style:none;
 }
 ul li::before {
-  content: "\1f436";  
+  content: "\1f415";  
   //color: orange; 
   font-weight: bold; 
   display: inline-block; 
-  width: 1em; 
-  margin-left: -1em; 
+  width: 2em; 
+  margin-left: -2em; 
 }
 ol {
   font-weight:500;
@@ -23,12 +23,12 @@ ol {
   list-style:none;
 }
 ol li::before {
-  content: "\1f436";  
+  content: "\1f415";  
   //color: orange; 
   font-weight: bold; 
   display: inline-block; 
-  width: 1em; 
-  margin-left: -1em; 
+  width: 2em; 
+  margin-left: -2em; 
 }
 p {
 font-weight:300

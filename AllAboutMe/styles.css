@@ -4,6 +4,7 @@ body {
   font-size:18;
   font-weight:lighter;
   color: rgb(105,105,105);
+  text-align: center;
 }
 a {
   font-style:"italic"

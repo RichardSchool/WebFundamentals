@@ -25,3 +25,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
+
+function onLoad(){
+alert("Click on the dots to view the images");
+}

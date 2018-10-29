@@ -64,6 +64,7 @@ img {
   cursor: pointer;
   position: absolute;
   top: 50%;
+  left: 50%;
   width: auto;
   margin-top: -22px;
   padding: -16px;

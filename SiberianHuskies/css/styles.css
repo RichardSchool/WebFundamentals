@@ -4,18 +4,28 @@ body {
   background-color:gold;
 }
 
+
+p {
+font-weight:300;
+}
+
+h1, h2 {
+font-weight:900;
+}
+
 hr {
   border: 10px solid grey;
   border-radius: 5px;
+  width: 75%
 }
 
-ul { 
+ul, ol { 
   font-weight:500;
   display:table; 
   margin:0 auto;
   list-style:none;
 }
-ul li::before {
+ul li::before, ol li::before {
   content: "\1f415";  
   //color: orange; 
   font-weight: bold; 
@@ -23,23 +33,7 @@ ul li::before {
   width: 2em; 
   margin-left: -2em; 
 }
-ol {
-  font-weight:500;
-  display:table; 
-  margin:0 auto;
-  list-style:none;
-}
-ol li::before {
-  content: "\1f415";  
-  //color: orange; 
-  font-weight: bold; 
-  display: inline-block; 
-  width: 2em; 
-  margin-left: -2em; 
-}
-p {
-font-weight:300
-}
+
 
 img {
     //border-style: double;
@@ -49,6 +43,9 @@ img {
     //width: 200px;
     //height: 150px; 
 }
+
+
+
 
 //BEGIN Slideshow
 * {box-sizing:border-box}

@@ -7,11 +7,11 @@ let code = [
 ];
 
 if(index == 0){
-element.innerHTML = code[1];
+element.innerHTML = `${code[1]}`;
 index=1;
 }
 if(index == 1){
-element.innerHTML = code[0];
+element.innerHTML = `${code[0]};
 index=0;
 }
 }

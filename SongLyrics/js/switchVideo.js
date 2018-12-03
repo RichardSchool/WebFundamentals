@@ -1,5 +1,5 @@
 var index = 0;
-function switchVideo(index){
+function switchVideo(){
 let element = document.getElementById("videoembed");
 let code = [
 `<iframe width="806" height="453" float="middle" src="https://www.youtube.com/embed/dgha9S39Y6M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Your browser needs to support inline frames inorder of this video to load.</iframe>`,

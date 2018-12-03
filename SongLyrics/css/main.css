@@ -21,6 +21,7 @@ button {
     background-color: white;
     color: black;
     border: 2px solid #b9f2ff;
+    margin: 0 auto;
 }
 body {
   background-image: url("assets/background.jpg");

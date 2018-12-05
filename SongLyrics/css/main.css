@@ -27,3 +27,7 @@ body {
   background-image: url("assets/background.jpg");
   background-color: #cccccc;
 }
+p.lyrics b{
+color: blue;
+  
+}

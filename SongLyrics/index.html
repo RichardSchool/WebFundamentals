@@ -105,19 +105,31 @@ Uh, Thanks, thanks for listening guys and thanks for recommending this song
   </p>
 <div id="gallery">
   <script>
+    var imgindex = 0;
     var imgs = [
     "https://img.youtube.com/vi/dgha9S39Y6M/maxresdefault.jpg"  
     ];
-    function previous(array){
-      
-    }
-    function next(array){
     
+    function previous(index, array, elementid){
+      let element = document.getElementById(elementid);
+      index++;
+      if(index >= array.length) {
+      index = 0;
+  }
+  element.src = array[index];
+    }
+    function next(index, array, elementid){
+      let element = document.getElementById(elementid);
+      index--;
+      if(index < 0) {
+    index = array.length-1;
+  }
+  element.src = index[array];
     }
   </script>
-  <button onclick="previous(imgs)">&lt</button>
-  <img src="https://img.youtube.com/vi/dgha9S39Y6M/maxresdefault.jpg" height="" width=""/>
-  <button onclick="next(imgs)">&gt</button>
+  <button onclick="previous(imgindex, imgs, "image")">&lt</button>
+  <img id="image" src="https://img.youtube.com/vi/dgha9S39Y6M/maxresdefault.jpg" height="640" width="480"/>
+  <button onclick="next(imgindex, imgs, "image")">&gt</button>
 </dov>
 
 </body>

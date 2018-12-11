@@ -1,8 +1,7 @@
-var elements = document.getElementsByClassName("rainbow");
 var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
 var index = 0;
 function changeColor(){
-elements.forEach(element=>{
+$('.rainbow').each(element=>{
 element.style.color = color[index];
 index++;
 if(index>colors.length){

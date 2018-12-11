@@ -1,7 +1,7 @@
 var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
 var index = 0;
+var element = getElementById("rainbowheading")
 function changeColor(){
-$('.rainbow').each(element=>{
 element.style.color = colors[index];
 index++;
 if(index>colors.length){

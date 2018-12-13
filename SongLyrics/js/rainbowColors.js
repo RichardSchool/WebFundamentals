@@ -1,3 +1,7 @@
+function changeColor () {
+console.log("Replaced");
+}
+/*
 var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
 var index = 0;
 var element = getElementById("rainbowheading")
@@ -13,3 +17,4 @@ index = 0;
 var changeMeColor = setInterval(()=>{
 changeColor();
 }, 1000);
+*/

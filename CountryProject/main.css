@@ -34,17 +34,17 @@ color:white;
   border: 1px solid #555;
 
 }
-.nav li a {
+li.nav a.navlink {
   display: block;
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
 }
-.navlink a:hover {
+a:hover.navlink {
   background-color: #555;
   color: white;
 }
-.navlink .active {
+.navlink.active {
   background-color: #4CAF50;
   color: white;
 }

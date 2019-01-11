@@ -22,7 +22,7 @@ body {
 color:white;
 }
 
-.nav ul {
+.navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -31,6 +31,8 @@ color:white;
   height: 100%; /* Full height */
   position: fixed; /* Make it stick, even on scroll */
   overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  border: 1px solid #555;
+
 }
 .nav li a {
   display: block;
@@ -38,16 +40,13 @@ color:white;
   padding: 8px 16px;
   text-decoration: none;
 }
-.nav li a:hover {
+.navlink a:hover {
   background-color: #555;
   color: white;
 }
-.nav .active {
+.navlink .active {
   background-color: #4CAF50;
   color: white;
-}
-.nav ul {
-  border: 1px solid #555;
 }
 
 .nav li {

@@ -1,8 +1,10 @@
+.highlighting: {
+background-color:#00487C
+}
 p {
 color:white;
 text-color:white;
 font-size:16px;
-  background-color: #00487C;
 }
 h1 {
 color:white;

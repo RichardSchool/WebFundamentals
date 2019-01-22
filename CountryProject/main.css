@@ -24,6 +24,9 @@ color:white;
   background-color: #00487C;
 }
 
+.card-body {
+background-color: #00487C;
+}
 //gallery
 
 .row > .column {

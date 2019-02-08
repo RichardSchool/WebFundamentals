@@ -5,18 +5,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script>
+      const elements = [document.getElementById("firstInd"), document.getElementById("firstItem")];
+      for(let element of elements){
+        element.classList.toggle("active");
+      }                                                                               
+      function magic () {
+        const button = document.getElementById("whereMagicHappens");
+        if(button.value == "Show me the Magic"){
+          button.value == "I've seen everything. Take me away.";
+        }
+        if(button.value == "I've seen everything. Take me away"){
+          button.value == "Show me the Magic";
+        }
+      for(let element of elements){
+        element.classList.toggle("active");
+      }                
+      }
+    </script>
   </head>
   <h1 style="text-align:center;">Splatter Art</h1>
   <div>
+    <button id="whereMagicHappens" onclick="magic()">Show me the Magic</button>
   <div id="richardIsCool" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
-    <li data-target="#richardIsCool" data-slide-to="0" class="active"></li>
+    <li data-target="#richardIsCool" data-slide-to="0" class="active" id="firstInd"></li>
     <li data-target="#richardIsCool" data-slide-to="1"></li>
     <li data-target="#richardIsCool" data-slide-to="2"></li>
     <li data-target="#richardIsCool" data-slide-to="3"></li>
   </ol>
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item active" id="firstItem">
       <img class="d-block w-100" src="assets/splatter1.fw.png" alt="First Splatter">
     </div>
     <div class="carousel-item">

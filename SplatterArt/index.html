@@ -6,19 +6,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script>
-      const elements = [document.getElementById("firstInd"), document.getElementById("firstItem")];
-        elements[0].classList.toggle("active");          
-        elements[1].classList.toggle("active");                                                                        
+      const elements = [$("#firstInd"), $("#firstItem")];
+        elements[0].toggleClass("active");          
+        elements[1].toggleClass("active");          
       function magic() {
-        const button = document.getElementById("whereMagicHappens");
-        if(button.value == "Show me the Magic"){
-          button.value == "I've seen everything. Take me away.";
+        const button = $("#whereMagicHappens");
+        if(button.val == "Show me the Magic"){
+          button.val == "I've seen everything. Take me away.";
         }
-        if(button.value == "I've seen everything. Take me away"){
-          button.value == "Show me the Magic";
+        if(button.val == "I've seen everything. Take me away"){
+          button.val == "Show me the Magic";
         }
-        elements[0].classList.toggle("active");          
-        elements[1].classList.toggle("active");                
+        elements[0].toggleClass("active");          
+        elements[1].toggleClass("active");                 
       }
     </script>
   </head>

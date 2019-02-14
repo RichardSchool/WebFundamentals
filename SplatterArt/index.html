@@ -9,11 +9,11 @@
       function magic() {
         if(document.getElementById("whereMagicHappens").innerHTML == "Show me the Magic"){
           document.getElementById("whereMagicHappens").innerHTML = "I've seen everything. Take me away.";
-          $("#richardIsCool").attr("hidden", false);                  
+          $("#richardIsCool").removeAttr("hidden");                  
         }
         if(document.getElementById("whereMagicHappens").innerHTML == "I've seen everything. Take me away."){
           document.getElementById("whereMagicHappens").innerHTML = "Show me the Magic";
-          $("#richardIsCool").attr("hidden", true);           
+          $("#richardIsCool").attr("hidden", '');           
         }                
       }
     </script>

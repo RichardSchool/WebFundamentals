@@ -6,17 +6,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script>
-      const element = $("#richardIsCool");
-      const button = document.getElementById("whereMagicHappens");
       function magic() {
-         element.attr("hidden", true);          
-        if(button.innerHTML == "Show me the Magic"){
-          button.innerHTML = "I've seen everything. Take me away.";
-        element.attr("hidden", false);                  
+          $("#richardIsCool").attr("hidden", true);          
+        if(document.getElementById("whereMagicHappens").innerHTML == "Show me the Magic"){
+          document.getElementById("whereMagicHappens").innerHTML = "I've seen everything. Take me away.";
+          $("#richardIsCool").attr("hidden", false);                  
         }
-        if(button.innerHTML == "I've seen everything. Take me away"){
-          button.innerHTML = "Show me the Magic";
-        element.attr("hidden", true);          
+        if(document.getElementById("whereMagicHappens").innerHTML == "I've seen everything. Take me away"){
+          document.getElementById("whereMagicHappens").innerHTML = "Show me the Magic";
+          $("#richardIsCool").attr("hidden", true);           
         }                
       }
     </script>

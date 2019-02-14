@@ -7,12 +7,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script>
       function magic() {
-          $("#richardIsCool").attr("hidden", true);          
         if(document.getElementById("whereMagicHappens").innerHTML == "Show me the Magic"){
           document.getElementById("whereMagicHappens").innerHTML = "I've seen everything. Take me away.";
           $("#richardIsCool").attr("hidden", false);                  
         }
-        if(document.getElementById("whereMagicHappens").innerHTML == "I've seen everything. Take me away"){
+        if(document.getElementById("whereMagicHappens").innerHTML == "I've seen everything. Take me away."){
           document.getElementById("whereMagicHappens").innerHTML = "Show me the Magic";
           $("#richardIsCool").attr("hidden", true);           
         }                
@@ -22,7 +21,7 @@
   <h1 style="text-align:center;">Splatter Art</h1>
   <div>
     <button id="whereMagicHappens" onclick="magic()">Show me the Magic</button>
-  <div id="richardIsCool" class="carousel slide" data-ride="carousel">
+  <div id="richardIsCool" class="carousel slide" data-ride="carousel" hidden=true>
   <ol class="carousel-indicators">
     <li data-target="#richardIsCool" data-slide-to="0" class="active" id="firstInd"></li>
     <li data-target="#richardIsCool" data-slide-to="1"></li>

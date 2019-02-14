@@ -6,17 +6,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script>
-      const elements = [$("#firstInd"), $("#firstItem")];
+      const element = $("#richardIsCool");
      
       function magic() {
-        const button = $("#whereMagicHappens");
-        if(button.val == "Show me the Magic"){
-          button.val == "I've seen everything. Take me away.";
+        const button = document.getElementByID("whereMagicHappens");
+        if(button.innerHTML == "Show me the Magic"){
+          button.innerHTML = "I've seen everything. Take me away.";
         elements[0].attr("hidden", false);          
         elements[1].attr("hidden", false);     
         }
-        if(button.val == "I've seen everything. Take me away"){
-          button.val == "Show me the Magic";
+        if(button.innerHTML == "I've seen everything. Take me away"){
+          button.innerHTML = "Show me the Magic";
         elements[0].attr("hidden", true);          
         elements[1].attr("hidden", true);     
         }                
